@@ -1,0 +1,4 @@
+Pour ouvrir le .jar :
+ouvrir une fenetre PowerShell dans le dossier où se trouve le fichier jar
+et entrer la commande suivante :
+java -jar 6QuiPrend.jar
