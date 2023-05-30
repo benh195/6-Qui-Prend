@@ -1,9 +1,5 @@
 package Objets;
 
-/**
- *
- * @author Gabriel
- */
 public class Carte {
     private int valeur;
     private int teteDeBoeuf;

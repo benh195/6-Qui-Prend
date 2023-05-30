@@ -11,10 +11,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Gabriel
- */
 public class UtileTest {
     
     public UtileTest() {
@@ -117,7 +113,7 @@ public class UtileTest {
         Joueur j2 = new Joueur(2);
         Tjoueur[0] = j1;
         Tjoueur[1] = j2;
-        String expResult = "Colleen";
+        String expResult = "Ben";
         Joueur result = Utile.JoueurGagnant(Tjoueur);
         assertTrue(expResult.equals(result.getNom()));
     }

@@ -5,10 +5,6 @@ import Objets.Joueur;
 import Objets.Ligne;
 import Outiles.Utile;
 
-/**
- *
- * @author Gabriel
- */
 public class Jeu {
     private Carte[] paquet;
     private Carte[] copiePaquet;

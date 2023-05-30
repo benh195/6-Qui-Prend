@@ -3,9 +3,6 @@ package Objets;
 import CoeurDuJeu.Jeu;
 import Outiles.Utile;
 
-/**
- * @author Gabriel
- */
 public class Ligne {
     private int numLigne;
     private int nbCarte;

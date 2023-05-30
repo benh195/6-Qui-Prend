@@ -5,38 +5,12 @@ import CoeurDuJeu.Menu;
 import Outiles.Utile;
 import java.util.Scanner;
 
-/**
- *
- * @author Gabriel
- */
 public class Joueur {
     final private String nom;
     private int nbTeteDeBoeuf;
     private Carte Tmain[];
     private Carte carteChoisie;
 
-    /**
-     *Constructeur pour les tests unitaires.
-     * @param i correspond a gabriel pour le joueur 1 et a Colleen pour le joueur 2 dans les tests unitaires.
-     */
-    public Joueur(int i){
-        if (i == 1){
-            this.nom = "Gabriel";
-            this.nbTeteDeBoeuf = 100;
-            this.Tmain = null;
-            this.carteChoisie = null;
-        }
-        else{
-            this.nom = "Colleen";
-            this.nbTeteDeBoeuf = 50;
-            this.Tmain = null;
-            this.carteChoisie = null;
-        }
-    }
-    /**
-     * Constructeur de joueur
-     * @param jeu est l'objet jeu que l'on appelle ici pour avoir acces au paquet de carte.
-     */
     public Joueur(Jeu jeu) {
         System.out.println("Comment vous appellez vous joueur ?");
         Scanner joueur = new Scanner(System.in);
@@ -52,7 +26,7 @@ public class Joueur {
     }
     
     /**
-     * Méthode utilisée dans le cas de la variante 2 pour permmetre aux joueurs de choisir leur cartes.
+     * Méthode utilisée dans le cas de la variante 2 pour permetre aux joueurs de choisir leur cartes.
      * @param jeu est l'objet jeu que l'on appelle ici pour avoir acces au paquet de carte.
      * @param posi correspond a la position dans la main de la carte que l'on ajoute.
      */
