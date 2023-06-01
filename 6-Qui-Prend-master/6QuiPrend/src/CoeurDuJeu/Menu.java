@@ -29,8 +29,6 @@ public class Menu {
         + espace +         "                                                                      "
         + espace +         "<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>"
         + espace +         "                                                                      "
-        + espace +         "   Plusieurs mode de jeu sont disponible sans compter l'extention !   "//choix du mode
-        + espace +         "                                                                      "
         + espace +         "   Pour jouer au jeu tapez #1# dans la console                        "
         + espace +         "                                                                      ");
         Scanner menu = new Scanner(System.in);
