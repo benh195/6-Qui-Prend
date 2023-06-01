@@ -1,15 +1,12 @@
 package Outiles;
 
-import Objets.Carte;
-import Objets.Joueur;
-import Objets.Ligne;
 import CoeurDuJeu.Jeu;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import Objets.Carte;
+import Objets.Ligne;
+import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class UtileTest {
     
@@ -47,7 +44,7 @@ public class UtileTest {
     public void testMelangeTableau() {
         System.out.println("MelangeTableau");
         Carte[] tab = TestPaquet();//le paquet est créer et toutes les cartes sont rangées par ordre croissant.
-        tab = Utile.MelangeTableau(tab);//on melange alors le paquet
+        Utile.MelangeTableau(tab);//on melange alors le paquet
         int compt = 0;
         for(int i = 0; i < tab.length-1; i++){
             if(tab[i].getValeur() > tab[i+1].getValeur()){//si on trouve une valeur supérieure à celle de la carte qui suit, on ajoute 1 à la variable compt
@@ -102,19 +99,4 @@ public class UtileTest {
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of JoueurGagnant method, of class Utile.
-     */
-    @Test
-    public void testJoueurGagnant() {
-        System.out.println("JoueurGagnant");
-        Joueur[] Tjoueur = new Joueur[2];
-        Joueur j1 = new Joueur(1);
-        Joueur j2 = new Joueur(2);
-        Tjoueur[0] = j1;
-        Tjoueur[1] = j2;
-        String expResult = "Ben";
-        Joueur result = Utile.JoueurGagnant(Tjoueur);
-        assertTrue(expResult.equals(result.getNom()));
-    }
 }

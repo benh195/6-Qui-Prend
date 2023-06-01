@@ -21,7 +21,7 @@ public class Menu {
     }
     
     /**
-     *Affichage du menu avec le choix du mode de jeu.
+     *Affichage du menu
      */
     public static void Menu(){
         String espace = System.getProperty("line.separator");//ligne de code trouvé sur Internet, on attribut à la variable string espace la propriété de sauter une ligne quand on l'affiche
